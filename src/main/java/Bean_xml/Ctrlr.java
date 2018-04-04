@@ -16,6 +16,6 @@ public @ResponseBody void ret()
 	ApplicationContext cntext=new ClassPathXmlApplicationContext("spring/application-config.xml");
 	A a=cntext.getBean("a",A.class);
 	a.display();
-	((AbstractApplicationContext) cntext).registerShutdownHook();//
+	((AbstractApplicationContext) cntext).registerShutdownHook();
 	}
 }
